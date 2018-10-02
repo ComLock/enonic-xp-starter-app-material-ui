@@ -1,11 +1,11 @@
 <part>
-	<display-name>SVG Icon</display-name>
+	<display-name>Icon</display-name>
 	<config>
 		<input name="iconName" type="ComboBox">
 			<label>Icon name</label>
 			<occurrences minimum="1" maximum="1"/>
 			<config>
-				<option value="add">Add</option>
+				<option value="add_circle">Add circle</option>
 			</config>
 			<default></default>
 		</input>
@@ -51,21 +51,6 @@
 				<option value="large">large</option>
 			</config>
 			<default>default</default>
-		</input>
-
-		<input name="nativeColor" type="TextLine">
-			<label>Native color</label>
-			<occurrences minimum="0" maximum="1"/>
-		</input>
-
-		<input name="titleAccess" type="TextLine">
-			<label>Title access</label>
-			<occurrences minimum="0" maximum="1"/>
-		</input>
-
-		<input name="viewBox" type="TextLine">
-			<label>View box</label>
-			<occurrences minimum="0" maximum="1"/>
 		</input>
 
 	</config>
