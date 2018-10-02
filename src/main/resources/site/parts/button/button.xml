@@ -1,0 +1,78 @@
+<part>
+	<display-name>Element</display-name>
+	<config>
+		<input name="text" type="TextLine">
+			<label>Text</label>
+			<occurrences minimum="0" maximum="1"/>
+		</input>
+
+		<input name="color" type="ComboBox">
+			<label>Color</label>
+			<occurrences minimum="0" maximum="1"/>
+			<config>
+				<option value="default">default</option>
+				<option value="inherit">inherit</option>
+				<option value="primary">primary</option>
+				<option value="secondary">secondary</option>
+			</config>
+			<default>default</default>
+		</input>
+
+		<input name="disabled" type="CheckBox">
+			<label>Disabled</label>
+			<default>unchecked</default>
+		</input>
+
+		<input name="disableFocusRipple" type="CheckBox">
+			<label>Disable focus ripple</label>
+			<default>unchecked</default>
+		</input>
+
+		<input name="disableRipple" type="CheckBox">
+			<label>Disable ripple</label>
+			<default>unchecked</default>
+		</input>
+
+		<input name="fullWidth" type="CheckBox">
+			<label>Full width</label>
+			<default>unchecked</default>
+		</input>
+
+		<input name="href" type="TextLine">
+			<label>Href</label>
+			<occurrences minimum="0" maximum="1"/>
+		</input>
+
+		<input name="mini" type="CheckBox">
+			<label>Mini</label>
+			<default>unchecked</default>
+		</input>
+
+		<input name="size" type="ComboBox">
+			<label>Size</label>
+			<occurrences minimum="0" maximum="1"/>
+			<config>
+				<option value="small">small</option>
+				<option value="medium">medium (default)</option>
+				<option value="large">large</option>
+			</config>
+			<default>medium</default>
+		</input>
+
+		<input name="variant" type="ComboBox">
+			<label>Variant</label>
+			<occurrences minimum="0" maximum="1"/>
+			<config>
+				<option value="text">text (default)</option>
+				<option value="flat">flat</option>
+				<option value="outlined">outlined</option>
+				<option value="contained">contained</option>
+				<option value="raised">raised</option>
+				<option value="fab">fab</option>
+				<option value="extendedFab">extendedFab</option>
+			</config>
+			<default>text</default>
+		</input>
+
+	</config>
+</part>
