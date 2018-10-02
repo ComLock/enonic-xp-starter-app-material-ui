@@ -1,0 +1,72 @@
+<part>
+	<display-name>SVG Icon</display-name>
+	<config>
+		<input name="iconName" type="ComboBox">
+			<label>Icon name</label>
+			<occurrences minimum="0" maximum="1"/>
+			<config>
+				<option value="add">Add</option>
+			</config>
+			<default></default>
+		</input>
+
+		<!--input name="classes" type="ComboBox">
+			<label>Classes</label>
+			<occurrences minimum="0" maximum="0"/>
+			<config>
+				<option value="root">root</option>
+				<option value="colorPrimary">colorPrimary</option>
+				<option value="colorSecondary">colorSecondary</option>
+				<option value="colorAction">colorAction</option>
+				<option value="colorError">colorError</option>
+				<option value="colorDisabled">colorDisabled</option>
+				<option value="fontSizeInherit">fontSizeInherit</option>
+				<option value="fontSizeSmall">fontSizeSmall</option>
+				<option value="fontSizeLarge">fontSizeLarge</option>
+			</config>
+			<default></default>
+		</input-->
+
+		<input name="color" type="ComboBox">
+			<label>Color</label>
+			<occurrences minimum="0" maximum="1"/>
+			<config>
+				<option value="inherit">inherit (default)</option>
+				<option value="primary">primary</option>
+				<option value="secondary">secondary</option>
+				<option value="action">action</option>
+				<option value="error">error</option>
+				<option value="disabled">disabled</option>
+			</config>
+			<default>inherit</default>
+		</input>
+
+		<input name="fontSize" type="ComboBox">
+			<label>Font size</label>
+			<occurrences minimum="0" maximum="1"/>
+			<config>
+				<option value="default">default</option>
+				<option value="inherit">inherit</option>
+				<option value="small">small</option>
+				<option value="large">large</option>
+			</config>
+			<default>default</default>
+		</input>
+
+		<input name="nativeColor" type="TextLine">
+			<label>Native color</label>
+			<occurrences minimum="0" maximum="1"/>
+		</input>
+
+		<input name="titleAccess" type="TextLine">
+			<label>Title access</label>
+			<occurrences minimum="0" maximum="1"/>
+		</input>
+
+		<input name="viewBox" type="TextLine">
+			<label>View box</label>
+			<occurrences minimum="0" maximum="1"/>
+		</input>
+
+	</config>
+</part>
