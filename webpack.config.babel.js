@@ -143,7 +143,7 @@ const SERVER_JS_CONFIG = {
 //──────────────────────────────────────────────────────────────────────────────
 // Styling
 //──────────────────────────────────────────────────────────────────────────────
-const STYLE_USE = [
+/*const STYLE_USE = [
 	MiniCssExtractPlugin.loader,
 	{
 		loader: 'css-loader', // translates CSS into CommonJS
@@ -153,7 +153,7 @@ const STYLE_USE = [
 		options: {
 			ident: 'postcss',
 			plugins: () => [
-				postcssPresetEnv(/* options */)
+				postcssPresetEnv()
 			]
 		}
 	}
@@ -202,7 +202,7 @@ const STYLE_CONFIG = {
 					}
 				}
 			]
-		}, */{
+		}, {
 			test: /\.styl$/,
 			use: [
 				...STYLE_USE,
@@ -231,15 +231,15 @@ const STYLE_CONFIG = {
 		})
 	],
 	stats
-};
+};*/
 //console.log(`STYLE_CONFIG:${JSON.stringify(STYLE_CONFIG, null, 4)}`);
 
 //──────────────────────────────────────────────────────────────────────────────
 // Exports
 //──────────────────────────────────────────────────────────────────────────────
 const WEBPACK_CONFIG = [
-	SERVER_JS_CONFIG,
-	STYLE_CONFIG
+	SERVER_JS_CONFIG/*,
+	STYLE_CONFIG*/
 ];
 
 //console.log(`WEBPACK_CONFIG:${JSON.stringify(WEBPACK_CONFIG, null, 4)}`);
