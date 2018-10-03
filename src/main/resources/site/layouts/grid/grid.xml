@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<layout>
+	<display-name>Grid</display-name>
+	<config>
+
+		<input name="spacing" type="ComboBox">
+			<label>Spacing</label>
+			<occurrences minimum="1" maximum="1"/>
+			<config>
+				<option value="0">0 (default)</option>
+				<option value="8">8</option>
+				<option value="16">16</option>
+				<option value="24">24</option>
+				<option value="32">32</option>
+				<option value="40">40</option>
+			</config>
+			<default>0</default>
+		</input>
+
+		<item-set name="items">
+			<label>Grid item</label>
+			<occurrences minimum="1" maximum="12"/><!-- maximum should be same as number of regions -->
+			<items>
+				<input name="alignContent" type="ComboBox">
+					<label>Align content</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="flex-start">flex-start</option>
+						<option value="flex-end">flex-end</option>
+						<option value="center">center</option>
+						<option value="space-between">space-between</option>
+						<option value="space-around">space-around</option>
+						<option value="stretch">stretch (default)</option>
+					</config>
+					<default>stretch</default>
+				</input>
+
+				<input name="alignItems" type="ComboBox">
+					<label>Align items</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="flex-start">flex-start</option>
+						<option value="flex-end">flex-end</option>
+						<option value="center">center</option>
+						<option value="baseline">baseline</option>
+						<option value="stretch">stretch (default)</option>
+					</config>
+					<default>stretch</default>
+				</input>
+
+				<input name="direction" type="ComboBox">
+					<label>Direction</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="row">row (default)</option>
+						<option value="row-reverse">row-reverse</option>
+						<option value="column">column</option>
+						<option value="column-reverse">column-reverse</option>
+					</config>
+					<default>row</default>
+				</input>
+
+				<input name="justify" type="ComboBox">
+					<label>Justify</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="flex-start">flex-start (default)</option>
+						<option value="flex-end">flex-end</option>
+						<option value="center">center</option>
+						<option value="space-between">space-between</option>
+						<option value="space-around">space-around</option>
+						<option value="space-evenly">space-evenly</option>
+					</config>
+					<default>flex-start</default>
+				</input>
+
+				<input name="lg" type="ComboBox">
+					<label>lg</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="false">false (default)</option>
+						<option value="center">center</option>
+						<option value="auto">auto</option>
+						<option value="true">true</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</config>
+					<default>false</default>
+				</input>
+
+				<input name="md" type="ComboBox">
+					<label>md</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="false">false (default)</option>
+						<option value="center">center</option>
+						<option value="auto">auto</option>
+						<option value="true">true</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</config>
+					<default>false</default>
+				</input>
+
+				<input name="sm" type="ComboBox">
+					<label>sm</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="false">false (default)</option>
+						<option value="center">center</option>
+						<option value="auto">auto</option>
+						<option value="true">true</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</config>
+					<default>false</default>
+				</input>
+
+
+
+				<input name="wrap" type="ComboBox">
+					<label>Wrap</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="nowrap">nowrap</option>
+						<option value="wrap">wrap (default)</option>
+						<option value="wrap-reverse">wrap-reverse</option>
+					</config>
+					<default>wrap</default>
+				</input>
+
+				<input name="xl" type="ComboBox">
+					<label>xl</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="false">false (default)</option>
+						<option value="center">center</option>
+						<option value="auto">auto</option>
+						<option value="true">true</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</config>
+					<default>false</default>
+				</input>
+
+				<input name="xs" type="ComboBox">
+					<label>xs</label>
+					<occurrences minimum="1" maximum="1"/>
+					<config>
+						<option value="false">false (default)</option>
+						<option value="center">center</option>
+						<option value="auto">auto</option>
+						<option value="true">true</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</config>
+					<default>false</default>
+				</input>
+
+				<input name="zeroMinWidth" type="CheckBox">
+					<label>Zero min width</label>
+					<default>unchecked</default>
+				</input>
+			</items>
+		</item-set>
+	</config>
+	<regions>
+		<region name="gridItem1"/>
+		<region name="gridItem2"/>
+		<region name="gridItem3"/>
+		<region name="gridItem4"/>
+		<region name="gridItem5"/>
+		<region name="gridItem6"/>
+		<region name="gridItem7"/>
+		<region name="gridItem8"/>
+		<region name="gridItem9"/>
+		<region name="gridItem10"/>
+		<region name="gridItem11"/>
+		<region name="gridItem12"/>
+	</regions>
+</layout>
